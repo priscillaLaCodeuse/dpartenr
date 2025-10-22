@@ -1,0 +1,81 @@
+//fonts
+
+@font-face {
+  font-family: "myriad";
+  src: url(../fonts/Myriad\ Arabic\ Italic.ttf);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Regular.otf);
+}
+
+$font1: myriad, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+$font2: poppins, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+//colors
+
+$color1: #0da8dc;
+$color2: #bdd0d5;
+$black1: #2e2d2c;
+$white1: #fdfdfd;
+$grey1: #858685;
+$grey2: #f1f1f1;
+$text: #333;
+$overlay1: rgba(13, 168, 220, 0.7);
+$overlay2: rgba(13, 168, 220, 0.8);
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
+
+//general
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: $font2;
+  color: $text;
+}
+
+body {
+  background: $white1;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
+  color: $color1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $white1;
+  text-shadow: 0 0 5px $blackShadow;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.7rem;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+.contact {
+  background: url(../img/services.webp) center/cover;
+  padding: 0;
+
+  .overlay {
+    background: $overlay1;
+    padding: 50px;
+    border-radius: 20px;
+
+    h2 {
+      color: $white1;
+    }
+
+    p {
+      color: $grey2;
+      padding-bottom: 30px;
+    }
+  }
+}

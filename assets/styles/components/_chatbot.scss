@@ -1,0 +1,219 @@
+.imgChatButton {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000000000000000000;
+
+  #iconChat {
+    margin: 20px;
+    width: 100px;
+    border-radius: 360px;
+    box-shadow: 0 0 20px $blackShadow;
+    cursor: pointer;
+  }
+}
+
+.chatbot {
+  display: none;
+  background: $white1;
+  height: 100%;
+  width: 30%;
+  padding: 20px;
+  border: 2px solid $color1;
+  border-radius: 20px;
+  margin: 20px;
+  position: sticky;
+  bottom: 20px;
+  left: 100%;
+  z-index: 10000000000000;
+
+  #closeChatIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 2px solid $color1;
+    border-radius: 360px;
+    background: $white1;
+    position: absolute;
+    color: $color1;
+    font-size: 1.5rem;
+    top: 0px;
+    right: -20px;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background: $color1;
+      color: $white1;
+    }
+  }
+
+  .imgChat {
+    img {
+      width: 100px;
+      border-radius: 360px;
+      box-shadow: 0 0 20px $blackShadow;
+    }
+  }
+
+  #response {
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+    overflow-clip-margin: border-box;
+  }
+
+  .bubble-right {
+    color: $text;
+    width: 70%;
+    margin: 5px 0 5px 30%;
+    background: $white1;
+    padding: 20px;
+    border: $color1;
+    border-radius: 20px;
+    box-shadow: 0 0 5px $blackShadow;
+    text-align: right;
+  }
+
+  #bienvenue,
+  .bubble-left,
+  #formulaireChat {
+    width: 70%;
+    margin: 5px 30% 5px 0;
+    background: $color1;
+    padding: 20px;
+    border: $color1;
+    border-radius: 20px;
+    box-shadow: 0 0 5px $blackShadow;
+    text-align: left;
+    color: $white1;
+  }
+
+  #formulaireChat {
+    display: none;
+    text-align: center;
+
+    form {
+      label {
+        width: 100%;
+        padding: 10px;
+        color: $white1;
+      }
+      input {
+        background: transparent;
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid $white1;
+        outline: none;
+        color: $white1;
+        transition: 0.2s;
+
+        &:hover,
+        &:focus,
+        &:active {
+          border-bottom: 1px solid $black1;
+        }
+      }
+
+      textarea {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid $white1;
+        outline: none;
+        background: transparent;
+        transition: 0.2s;
+
+        &:hover,
+        &:focus,
+        &:active {
+          border: 1px solid $black1;
+        }
+      }
+
+      button {
+        color: $white1;
+        border: 1px solid $white1;
+        transition: 0.2s;
+
+        &:hover {
+          color: $color1;
+          background: $white1;
+        }
+      }
+    }
+  }
+
+  #question {
+    width: 100%;
+    height: 20%;
+
+    input {
+      width: 70%;
+      padding: 10px;
+      margin-right: 20px;
+      cursor: text;
+      border: 1px solid $color1;
+      border-radius: 20px;
+      outline: $color1;
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+      padding: 5px 10px;
+      margin-top: 20px;
+      border-radius: 360px;
+      cursor: pointer;
+      background: $white1;
+      border: 1px solid $color1;
+      transition: 0.2s;
+
+      &:hover {
+        background: $color1;
+        // transform: scale(1.2);
+      }
+
+      i {
+        color: $color1;
+      }
+    }
+  }
+
+  #question button:hover #button-send {
+    display: none;
+  }
+
+  #button-send-hover {
+    display: none;
+  }
+
+  #question button:hover #button-send-hover {
+    display: block;
+    color: $white1;
+  }
+
+  #chargement {
+    display: none;
+    animation: rotation 1000ms infinite linear;
+    color: $color1;
+
+    @keyframes rotation {
+      0% {
+        rotate: 0;
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

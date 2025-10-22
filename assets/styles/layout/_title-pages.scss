@@ -1,0 +1,18 @@
+.title-page {
+  background: url(../img/bg-hero.webp) center/cover;
+  padding: 0;
+
+  .overlay {
+    background: $overlay1;
+    padding: 50px;
+    border-radius: 20px;
+
+    h1 {
+      padding-bottom: 30px;
+    }
+
+    p {
+      color: $white1;
+    }
+  }
+}

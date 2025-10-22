@@ -1,0 +1,194 @@
+header {
+  padding: 50px 0;
+
+  nav {
+    background: $color1;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px $blackShadow;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 770px) {
+      grid-template-columns: 1fr;
+      // height: 100%;
+    }
+
+    a {
+      margin: 0 auto;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        width: 15%;
+        filter: drop-shadow(0px 0px 5px $blackShadow);
+        transition: 0.2s;
+
+        @media screen and (max-width: 770px) {
+          width: 30%;
+        }
+      }
+    }
+
+    .menu-icons {
+      display: none;
+      text-align: right;
+      color: $white1;
+
+      @media screen and (max-width: 770px) {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+      }
+
+      i {
+        font-size: 1.5rem;
+        color: $white1;
+        text-shadow: 1px 1px 1px $blackShadow;
+      }
+
+      #open-icon {
+        display: none;
+
+        @media screen and (max-width: 770px) {
+          display: block;
+        }
+      }
+
+      #close-icon {
+        display: none;
+      }
+    }
+
+    .menuNav {
+      @media screen and (max-width: 770px) {
+        margin-top: 130px;
+      }
+      .NavListLi {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width: 770px) {
+          display: none;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          border-radius: 20px;
+          background: $color1;
+          box-shadow: 0 0 5px $blackShadow;
+        }
+
+        .liNav {
+          list-style: none;
+          padding: 5px;
+          transition: 0.2s;
+          cursor: pointer;
+
+          @media screen and (max-width: 770px) {
+            padding: 10px 0;
+            border-bottom: 1px solid $grey1;
+            text-align: center;
+
+            &:last-of-type {
+              border-radius: 20px;
+            }
+          }
+
+          a {
+            color: $white1;
+            text-decoration: none;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+
+            @media screen and (max-width: 770px) {
+              transform: none;
+            }
+          }
+        }
+
+        #menuServices {
+          i {
+            color: $white1;
+          }
+
+          .menuServicesNav {
+            display: none;
+
+            ul {
+              width: 230px;
+
+              li {
+                position: relative;
+
+                a {
+                  color: $color1;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            display: block;
+            position: relative;
+
+            .menuServicesNav {
+              display: block;
+              position: absolute;
+
+              ul {
+                display: block;
+                list-style: none;
+                margin: 10px 0;
+                text-align: left;
+                background: $white1;
+                border-top: 2px solid $color1;
+
+                @media screen and (max-width: 770px) {
+                  text-align: center;
+                  color: $color1;
+                  width: 80vw;
+                }
+
+                li {
+                  list-style: none;
+                  padding: 10px;
+                  border-bottom: 1px solid rgba(241, 241, 241, 0.8);
+                  font-size: 0.8rem;
+
+                  &:hover {
+                    background: $color1;
+                    transform: none;
+
+                    a {
+                      color: $white1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #button-call {
+      text-align: center;
+
+      @media screen and (max-width: 770px) {
+        display: none;
+      }
+    }
+  }
+}

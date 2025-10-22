@@ -1,0 +1,50 @@
+#a-propos {
+  h1 {
+    text-transform: uppercase;
+  }
+
+  .missionValeurs {
+    box-shadow: none;
+    border-radius: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
+    div {
+      box-shadow: 0 0 5px $blackShadow;
+      border-radius: 20px;
+      background: url(../img/logistic.webp) center/cover;
+
+      .overlay {
+        background: $overlay1;
+        padding: 50px;
+        border-radius: 20px;
+        height: 100%;
+
+        i {
+          color: $white1;
+          font-size: 2rem;
+          margin-bottom: 30px;
+          text-shadow: 0 0 5px $blackShadow;
+          border: 2px solid $white1;
+          padding: 20px;
+          border-radius: 150px;
+          box-shadow: 0 0 5px $blackShadow;
+        }
+
+        h2 {
+          color: $white1;
+        }
+
+        p {
+          color: $white1;
+        }
+      }
+    }
+  }
+}

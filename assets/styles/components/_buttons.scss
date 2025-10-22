@@ -1,0 +1,40 @@
+button {
+  background: transparent;
+  padding: 5px 20px;
+  border: 2px solid $color1;
+  border-radius: 150px;
+  box-shadow: 1px 1px 1px $blackShadow;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: $color1;
+    box-shadow: 1px 1px 10px $blackShadow;
+    transform: scale(1.1);
+
+    a {
+      color: $white1;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $color1;
+  }
+}
+
+.buttonWhite {
+  border: 2px solid $white1;
+
+  &:hover {
+    background: $white1;
+
+    a {
+      color: $color1;
+    }
+  }
+  a {
+    color: $white1;
+  }
+}

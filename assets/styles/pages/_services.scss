@@ -1,0 +1,53 @@
+#services {
+  h1 {
+    text-transform: uppercase;
+  }
+
+  .services {
+    padding: 0;
+    box-shadow: none;
+
+    .overlay {
+      border-radius: 20px;
+
+      .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media screen and (max-width: 1170px) {
+          grid-template-columns: 1fr;
+        }
+
+        a {
+          text-decoration: none;
+          height: 100%;
+          cursor: pointer;
+
+          div {
+            box-shadow: 0px 0px 5px $blackShadow;
+            border-radius: 20px;
+            height: 100%;
+            padding: 20px;
+            transition: 0.2s;
+
+            &:hover {
+              box-shadow: 0px 0px 10px $blackShadow;
+              transform: scale(1.02);
+            }
+
+            i {
+              padding-bottom: 30px;
+              font-size: 1.8rem;
+              color: $color1;
+            }
+
+            p {
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}

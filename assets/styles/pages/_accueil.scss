@@ -1,0 +1,115 @@
+#accueil {
+  .hero {
+    background: url(../img/bg-hero.webp) center/cover;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 10px auto 50px;
+    text-align: center;
+    padding: 0;
+    @media screen and (max-width: 770px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      div {
+        &:first-of-type {
+          display: none;
+        }
+      }
+    }
+
+    h1 {
+      padding-bottom: 30px;
+      text-shadow: 0 0 5px $blackShadow;
+    }
+
+    p {
+      color: $white1;
+      padding-bottom: 30px;
+      text-shadow: 0 0 5px $blackShadow;
+    }
+
+    button {
+      box-shadow: 0 0 5px $blackShadow;
+      text-shadow: 0 0 2px $blackShadow;
+
+      &:hover {
+        text-shadow: none;
+      }
+    }
+
+    div:last-of-type {
+      background: $overlay2;
+      border-radius: 0 20px 20px 0;
+      padding: 100px 50px;
+
+      @media screen and (max-width: 770px) {
+        border-radius: 20px;
+        background: $overlay1;
+      }
+    }
+  }
+
+  .about {
+    p {
+      padding-bottom: 30px;
+    }
+  }
+
+  .services {
+    background: url(../img/logistic.webp) center/cover;
+    padding: 0;
+
+    .overlay {
+      background: $overlay1;
+      padding: 50px;
+      border-radius: 20px;
+      h2 {
+        color: $white1;
+      }
+
+      .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+
+        @media screen and (max-width: 1300px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 1170px) {
+          grid-template-columns: 1fr;
+        }
+
+        a {
+          text-decoration: none;
+          height: 100%;
+          cursor: pointer;
+
+          div {
+            box-shadow: 0px 0px 5px $blackShadow;
+            border-radius: 20px;
+            height: 100%;
+            padding: 20px;
+            background: $white1;
+            transition: 0.2s;
+
+            &:hover {
+              box-shadow: 0px 0px 10px $blackShadow;
+              transform: scale(1.02);
+            }
+
+            i {
+              padding: 30px;
+              font-size: 1.8rem;
+              color: $color1;
+            }
+
+            // p {
+            //   text-align: justify;
+            // }
+          }
+        }
+      }
+    }
+  }
+}

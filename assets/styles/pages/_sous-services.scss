@@ -1,0 +1,71 @@
+.sous-services {
+  h1 {
+    text-transform: uppercase;
+  }
+
+  .services {
+    padding: 0;
+    box-shadow: none;
+
+    .overlay {
+      border-radius: 20px;
+
+      .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media screen and (max-width: 1170px) {
+          grid-template-columns: 1fr;
+        }
+
+        div {
+          height: 100%;
+          box-shadow: 0px 0px 5px $blackShadow;
+          border-radius: 20px;
+          padding: 30px;
+          transition: 0.2s;
+
+          i {
+            padding-bottom: 30px;
+            font-size: 1.8rem;
+            color: $color1;
+          }
+
+          p {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+#ordre-transport {
+  .services-container {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width: 1170px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+#rh {
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "se1 se2"
+      "re re"
+      "se3 se4";
+
+    @media screen and (max-width: 1170px) {
+      grid-template-columns: 1fr;
+    }
+
+    #recrutement {
+      grid-area: re;
+    }
+  }
+}
