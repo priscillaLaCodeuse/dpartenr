@@ -1,6 +1,6 @@
 # 📌 DParten'R 🚛
 
-#### URL : [Visitez DParten'R](https://dpartenr.webilys.fr/)
+#### URL : [Visitez DParten'R](https://dpartenr.priscillagency.com/)
 
 #### Description :
 
